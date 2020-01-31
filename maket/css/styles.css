@@ -1,0 +1,141 @@
+p {
+    margin: 0;
+}
+
+h1 {
+    font-size: 36px;
+    line-height: 43px;
+    color: #212121;
+    font-family: "Raleway";
+    font-weight: 400;
+    text-align: center;
+    margin: 0 0 30px 0;
+}
+
+.section {
+    padding: 110px 0 105px;
+}
+
+.title_block {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+p {
+    font-size: 14px;
+    line-height: 20px;
+    color: #86878b;
+    font-family: "Open Sans";
+    font-weight: 400;
+    margin: 10px;
+}
+
+.chocalate_bar_block {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 125px;
+    margin-right: 125px;
+    padding-top: 40px;
+}
+
+.title {
+    font-size: 20px;
+    line-height: 24px;
+    color: #333333;
+    font-family: "Open Sans";
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.block_with_icon {
+    height: 300px;
+    width: 380px;
+    padding: 0 15px;
+    align-items: center;
+}
+
+.circle {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 2px solid #ff8b38;
+    margin: auto;
+    font-size: 32px;
+    color: #ff8b38;
+    font-family: "Open Sans";
+    display: flex;
+    /* text-align: center; */
+    margin-bottom: 20px;
+}
+
+.icon {
+    margin: auto;
+    /* vertical-align: middle; */
+}
+
+.title_block hr {
+    border: none;
+    background-color: #ff8b38;
+    color: #ff8b38;
+    height: 2px;
+    width: 65px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.custom_section {
+    padding: 75px 0 40px;
+    background-image: url(../img/u25_state0.png);
+}
+
+.custom_section p {
+    font-size: 16px;
+    color: #ffffff;
+    font-family: "Raleway";
+    font-weight: 300;
+}
+
+.custom_section hr {
+    color: #ffffff;
+    background-color: #ffffff;
+}
+
+.custom_section h1 {
+    color: #ffffff;
+}
+
+.btn {
+    font-size: 15px;
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-weight: 600;
+    border: 2px solid #ffffff;
+    display: inline-block;
+    align-content: center;
+    padding: 15px 30px;
+    margin: 20px 0;
+}
+
+footer {
+    height: 100px;
+    background: black;
+    color: #ffffff;
+    padding: 40px 540px 15px;
+}
+
+.icon_block {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+footer p {
+    font-size: 12px;
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-weight: 400;
+    text-align: center;
+}
