@@ -114,6 +114,7 @@ p {
 
 .pricing_section {
     background-color: #f5f5f5;
+    padding: 100px 0 95px;
 }
 
 .pricing_columns_block {
@@ -136,11 +137,12 @@ p {
     font-family: "Open Sans";
     font-weight: 400;
     text-align: center;
+    padding: 0 20px;
 }
 
 .pricing_column li {
     border-bottom: 1px solid #f5f5f5;
-    padding: 20px;
+    padding: 15px 0 15px;
     background-color: #ffffff;
 }
 
@@ -152,6 +154,7 @@ p {
     font-weight: bold;
     line-height: 1.2;
     text-transform: none;
+    padding: 20px 0 20px;
 }
 
 .pricing_column .price {
@@ -163,6 +166,7 @@ p {
     font-weight: 700;
     line-height: 0.686;
     text-transform: none;
+    padding: 30px 0 10px;
 }
 
 .pricing_column .payment {
@@ -173,6 +177,7 @@ p {
     line-height: 1.714;
     border-bottom: none;
     text-transform: none;
+    padding: 15px 0 20px;
 }
 
 
@@ -272,19 +277,18 @@ p {
     margin: 20px 0;
 }
 
-footer {
-    height: 100px;
-    background: black;
-    color: #ffffff;
-    text-align: center;
-    padding: 50px;
-}
-
 .icon_block {
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin-bottom: 15px;
+}
+
+footer {
+    background: black;
+    color: #ffffff;
+    text-align: center;
+    padding: 40px 0 15px;
 }
 
 footer p {
