@@ -119,6 +119,7 @@ p {
 
 .pricing_columns_block {
     display: flex;
+    padding: 0 145px;
 }
 
 .pricing_block {
