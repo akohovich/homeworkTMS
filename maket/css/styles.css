@@ -1,15 +1,25 @@
+body {
+    margin: 0;
+}
+
 p {
     margin: 0;
 }
 
-h1 {
+#container {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+h2 {
     font-size: 36px;
     line-height: 43px;
     color: #212121;
     font-family: "Raleway";
     font-weight: 400;
+    text-transform: uppercase;
     text-align: center;
-    margin: 0 0 30px 0;
+    margin: 0 0 50px 0;
 }
 
 .section {
@@ -30,15 +40,6 @@ p {
     margin: 10px;
 }
 
-.chocalate_bar_block {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-left: 125px;
-    margin-right: 125px;
-    padding-top: 40px;
-}
-
 .title {
     font-size: 20px;
     line-height: 24px;
@@ -49,11 +50,47 @@ p {
     margin-bottom: 15px;
 }
 
-.block_with_icon {
-    height: 300px;
-    width: 380px;
-    padding: 0 15px;
+
+/* .title_block hr {
+    border: none;
+    background-color: #ff8b38;
+    color: #ff8b38;
+    height: 2px;
+    width: 65px;
+    margin-top: 0;
+    margin-bottom: 20px;
+} */
+
+.title_block h2 {
+    position: relative;
+}
+
+.title_block h2:after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 64px;
+    background-color: #ff8c2d;
+    position: absolute;
+    left: calc(50% - 32px);
+    bottom: -24px;
+}
+
+.chocalate_bar_block {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    /* display: flex;
+    justify-content: space-around;
     align-items: center;
+    margin-left: 125px;
+    margin-right: 125px;
+    padding-top: 40px; */
+}
+
+.block_with_icon {
+    /* padding: 0 15px; */
+    text-align: center;
 }
 
 .circle {
@@ -66,7 +103,7 @@ p {
     color: #ff8b38;
     font-family: "Open Sans";
     display: flex;
-    /* text-align: center; */
+    text-align: center;
     margin-bottom: 20px;
 }
 
@@ -75,19 +112,107 @@ p {
     /* vertical-align: middle; */
 }
 
-.title_block hr {
-    border: none;
-    background-color: #ff8b38;
-    color: #ff8b38;
+.pricing_section {
+    background-color: #f5f5f5;
+}
+
+.pricing_columns_block {
+    display: flex;
+}
+
+.pricing_block {
+    text-align: center;
+    width: 33.3%;
+    align-self: flex-end;
+    /* position: relative; */
+}
+
+.pricing_column {
+    list-style-type: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 24px;
+    color: #86878b;
+    font-family: "Open Sans";
+    font-weight: 400;
+    text-align: center;
+}
+
+.pricing_column li {
+    border-bottom: 1px solid #f5f5f5;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.pricing_column .header {
+    background-color: #2f2f2f;
+    font-size: 20px;
+    font-family: "OpenSans";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1.2;
+    text-transform: none;
+}
+
+.pricing_column .price {
+    background-color: #2f2f2f;
+    font-size: 35px;
+    line-height: 24px;
+    font-family: "Raleway";
+    color: #ffffff;
+    font-weight: 700;
+    line-height: 0.686;
+    text-transform: none;
+}
+
+.pricing_column .payment {
+    background-color: #2f2f2f;
+    font-size: 14px;
+    font-family: "OpenSans";
+    color: rgba(255, 255, 255, 0.502);
+    line-height: 1.714;
+    border-bottom: none;
+    text-transform: none;
+}
+
+
+/* .pricing_column .payment:after {
+    content: '';
+    display: block;
+    height: 5px;
+    width: 426px;
+    background-color: #ff8c2c;
+    position: absolute;
+    left: 40px;
+    top: calc(33.3% + 16px);
+}
+
+.pricing_columns_block .pricing_block:nth-child(2) .pricing_column .payment:after {
+    height: 40px;
+} */
+
+.pricing_column .empty {
+    font-size: 14px;
+    line-height: 24px;
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-weight: 700;
+    background-color: #ff8c2c;
+    padding: 0;
     height: 2px;
-    width: 65px;
-    margin-top: 0;
-    margin-bottom: 20px;
+}
+
+.pricing_columns_block .pricing_block:nth-child(2) .pricing_column .empty {
+    /* height: 40px; */
+    padding: 8px 0;
+    height: fit-content;
 }
 
 .custom_section {
-    padding: 75px 0 40px;
-    background-image: url(../img/u25_state0.png);
+    /* padding: 75px 0 40px; */
+    padding: 21px 0;
+    position: relative;
+    /* background-image: url(../img/u25_state0.png); */
 }
 
 .custom_section p {
@@ -95,15 +220,44 @@ p {
     color: #ffffff;
     font-family: "Raleway";
     font-weight: 300;
+    position: relative;
 }
 
-.custom_section hr {
+
+/* .custom_section hr {
     color: #ffffff;
+    background-color: #ffffff;
+} */
+
+.custom_section h2 {
+    color: #ffffff;
+}
+
+.custom_section .title_block h2:after {
     background-color: #ffffff;
 }
 
-.custom_section h1 {
-    color: #ffffff;
+.custom_section::after {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-image: url(../img/u25_state0.png);
+    position: absolute;
+    opacity: 0.7;
+    top: 0;
+    z-index: -1;
+}
+
+.custom_section::before {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-color: #000000;
+    position: absolute;
+    top: 0;
+    z-index: -2;
 }
 
 .btn {
@@ -122,7 +276,8 @@ footer {
     height: 100px;
     background: black;
     color: #ffffff;
-    padding: 40px 540px 15px;
+    text-align: center;
+    padding: 50px;
 }
 
 .icon_block {
@@ -139,3 +294,57 @@ footer p {
     font-weight: 400;
     text-align: center;
 }
+
+
+/* .socials {
+    display: flex;
+} */
+
+
+/* .sprite {
+    background-image: url(../img/social.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-facebook {
+    width: 30px;
+    height: 30px;
+    background-position: 10px 5px;
+}
+
+.sprite-twitter {
+    width: 30px;
+    height: 30px;
+    background-position: -40px 3px;
+}
+
+.sprite-gmail {
+    width: 30px;
+    height: 30px;
+    background-position: -90px 5px;
+}
+
+.sprite-pinterest {
+    width: 30px;
+    height: 30px;
+    background-position: -140px 5px;
+}
+
+.sprite-instagram {
+    width: 30px;
+    height: 30px;
+    background-position: -190px 5px;
+}
+
+.sprite-stumbleUpon {
+    width: 30px;
+    height: 30px;
+    background-position: -240px 5px;
+}
+
+.sprite-rss {
+    width: 30px;
+    height: 30px;
+    background-position: -290px 5px;
+} */
