@@ -248,7 +248,7 @@ p {
     display: block;
     height: 100%;
     width: 100%;
-    background-image: url(../img/u25_state0.png);
+    background: url(../img/u25_state0.png) center;
     position: absolute;
     opacity: 0.7;
     top: 0;
@@ -266,24 +266,29 @@ p {
     z-index: -2;
 }
 
-.btn {
-    font-size: 15px;
+.btn a {
     color: #ffffff;
+    font-size: 15px;
+    text-decoration: none;
     font-family: "Open Sans";
     font-weight: 600;
     border: 2px solid #ffffff;
     display: inline-block;
-    align-content: center;
-    padding: 15px 30px;
+    padding: 10px 30px;
     margin: 20px 0;
 }
 
-.icon_block {
+.btn a:hover {
+    text-decoration: underline;
+}
+
+
+/* .icon_block {
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin-bottom: 15px;
-}
+} */
 
 footer {
     background: black;
@@ -291,6 +296,22 @@ footer {
     text-align: center;
     padding: 40px 0 15px;
 }
+
+
+/* .socials {
+    text-align: center;
+    font-size: 24px;
+    padding-top: 35px;
+}
+
+.socials a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.socials a i {
+    padding-left: 25px;
+} */
 
 footer p {
     font-size: 12px;
@@ -300,13 +321,13 @@ footer p {
     text-align: center;
 }
 
-
-/* .socials {
+.socials {
     display: flex;
-} */
+    justify-content: space-around;
+    padding: 0 540px;
+}
 
-
-/* .sprite {
+.sprite {
     background-image: url(../img/social.png);
     background-repeat: no-repeat;
     display: block;
@@ -352,4 +373,4 @@ footer p {
     width: 30px;
     height: 30px;
     background-position: -290px 5px;
-} */
+}
