@@ -1,0 +1,260 @@
+body {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+.main_container {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.top_section {
+    padding-top: 50px;
+    padding-bottom: 290px;
+    background: url(../img/banner.png) center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    p::after {
+        content: '';
+        display: block;
+        height: 2px;
+        width: 20px;
+        background-color: #f6f6f6;
+        position: absolute;
+        bottom: -38px;
+    }
+}
+
+h2 {
+    font-size: 48px;
+    font-family: GothamRounded,
+        sans-serif;
+    color: rgb(246, 249, 250);
+    line-height: 1.188;
+}
+
+.custom_btn {
+    width: 100%;
+    min-height: 55px;
+    border-radius: 0;
+    border-width: 2px;
+    font-size: 14px;
+    font-family: 'ProximaNova SemiBold';
+    text-transform: uppercase;
+}
+
+.logo {
+    color: #fff;
+    margin-bottom: 200px;
+}
+
+.title_block {
+    h2 {
+        margin-bottom: 45px;
+    }
+
+    p {
+
+        font-size: 17px;
+        font-family: Proxima Nova,
+            sans-serif;
+        color: rgb(246, 249, 250);
+        line-height: 1.412;
+        margin-bottom: 110px;
+        position: relative;
+    }
+}
+
+.services_section {
+    padding-top: 285px;
+    padding-bottom: 350px;
+    background-color: #f6f6f6;
+    position: relative;
+
+    h2 {
+        font-family: 'OpenSans Bold';
+        font-size: 53px;
+        color: #333333;
+        margin-bottom: 30px;
+        text-transform: uppercase;
+    }
+}
+
+.tab_text {
+    font-family: 'ProximaNova Regular';
+    font-size: 18px;
+    color: #888888;
+}
+
+.dev_block {
+
+    position: absolute;
+    max-width: 46%;
+    top: 230px;
+    right: 0%;
+
+    .nav-link.service {
+        color: #000;
+        background-color: #fff;
+        height: 10vw;
+        width: 10vw;
+        margin-right: 10%;
+        transform: rotate(45deg);
+        position: relative;
+
+        &.active {
+            background-color: #28282e;
+        }
+
+        &:hover {
+            box-shadow: inset 0 0 10px gainsboro;
+        }
+
+        .service_content {
+            transform: rotate(-45deg);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 25%;
+            left: 25%;
+
+
+            h3 {
+                font-family: 'ProximaNova SemiBold';
+                font-size: 14px;
+                text-transform: uppercase;
+                text-align: center;
+            }
+        }
+
+        &.second_group {
+            transform: translate(-75%, -25%) rotate(45deg);
+        }
+
+        &.third_group {
+            transform: translate(-150%, -50%) rotate(45deg);
+        }
+    }
+}
+
+.works_section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+
+    .title_block h2 {
+        color: #333333;
+        font-family: 'OpenSans Bold';
+        font-size: 53px;
+        margin-bottom: 30px;
+        text-transform: uppercase;
+
+        &::after {
+            content: '';
+            display: block;
+            height: 2px;
+            width: 20px;
+            background-color: #333333;
+            position: absolute;
+            bottom: 10px;
+        }
+    }
+}
+
+.project_desc_section {
+    padding-top: 270px;
+    padding-bottom: 265px;
+    background-color: #28282e;
+    position: relative;
+
+    h2 {
+        position: relative;
+        margin-bottom: 90px;
+
+        &::after {
+            content: '';
+            display: block;
+            height: 2px;
+            width: 20px;
+            background-color: #f6f6f6;
+            position: absolute;
+            bottom: -38px;
+        }
+    }
+
+    .carousel-indicators {
+        bottom: -100px;
+
+        li {
+            background-color: transparent;
+            background-repeat: no-repeat;
+            height: 50px;
+            width: 75px;
+        }
+
+        .mob_icon {
+            background-image: url(../img/mob_icon.png);
+        }
+
+        .tab_icon {
+            background-image: url(../img/tab_icon.png);
+        }
+
+        .mac_icon {
+            background-image: url(../img/mac_icon.png);
+        }
+    }
+
+}
+
+.minds_section {
+    padding-top: 120px;
+    padding-bottom: 45px;
+
+    h2 {
+        color: #333333;
+        position: relative;
+        margin-bottom: 90px;
+
+        &::after {
+            content: '';
+            display: block;
+            height: 2px;
+            width: 20px;
+            background-color: #333333;
+            position: absolute;
+            bottom: -38px;
+        }
+    }
+
+    .table_head h3 {
+        font-size: 18px;
+        line-height: 26px;
+        color: #999999;
+        font-family: "Proxima Nova";
+        font-weight: 300;
+    }
+
+    .table_data {
+        & h3 {
+            font-size: 18px;
+            line-height: 26px;
+            color: #333333;
+            font-family: "Proxima Nova";
+            font-weight: 300;
+        }
+
+        & p {
+            font-size: 16px;
+            line-height: 25px;
+            color: #888888;
+            font-family: "Proxima Nova";
+        }
+    }
+}
