@@ -10,6 +10,10 @@ a {
     text-decoration: none;
 }
 
+html {
+    font-size: 10px;
+}
+
 .main_container {
     max-width: 1400px;
     margin: 0 auto;
@@ -19,11 +23,49 @@ h2 {
     font-size: 36px;
     line-height: 43px;
     color: #212121;
-    font-family: "Raleway";
+    font-family: Raleway, sans-serif;
     font-weight: 400;
     text-transform: uppercase;
     text-align: center;
     margin: 0 0 50px 0;
+}
+
+header {
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.nav_block {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_bar a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.nav_bar a:hover {
+    color: #ff8b38;
+}
+
+.nav_block ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.nav_block li {
+    list-style-type: none;
+    padding-left: 40px;
 }
 
 .header_section {
@@ -66,7 +108,7 @@ h2 {
 .signin_title {
     background-color: #f5f5f5;
     font-size: 20px;
-    font-family: 'Open Sans';
+    font-family: "Open Sans", sans-serif;
     font-weight: 700;
     text-align: center;
     padding: 15px 0 20px 0;
@@ -128,7 +170,7 @@ h2 {
 
 .social_title {
     width: 30%;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
 }
 
 .social_title h3 {
@@ -142,6 +184,7 @@ h2 {
 .social_title p {
     color: #86878b;
     font-size: 14px;
+    margin: 0;
 }
 
 .section {
@@ -157,7 +200,7 @@ p {
     font-size: 14px;
     line-height: 20px;
     color: #86878b;
-    font-family: "Open Sans";
+    font-family: "Open Sans", sans-serif;
     font-weight: 400;
     margin: 10px;
 }
@@ -166,7 +209,7 @@ p {
     font-size: 20px;
     line-height: 24px;
     color: #333333;
-    font-family: "Open Sans";
+    font-family: "Open Sans", sans-serif;
     font-weight: 700;
     text-align: center;
     margin-bottom: 15px;
@@ -207,7 +250,7 @@ p {
     margin: auto;
     font-size: 32px;
     color: #ff8b38;
-    font-family: "Open Sans";
+    font-family: "Open Sans", sans-serif;
     display: flex;
     text-align: center;
     margin-bottom: 20px;
@@ -239,7 +282,7 @@ p {
     font-size: 14px;
     line-height: 24px;
     color: #86878b;
-    font-family: "Open Sans";
+    font-family: "Open Sans", sans-serif;
     font-weight: 400;
     text-align: center;
     padding: 0 20px;
@@ -254,7 +297,7 @@ p {
 .pricing_column .header {
     background-color: #2f2f2f;
     font-size: 20px;
-    font-family: "OpenSans";
+    font-family: "OpenSans", sans-serif;
     color: rgb(255, 255, 255);
     font-weight: bold;
     line-height: 1.2;
@@ -266,7 +309,7 @@ p {
     background-color: #2f2f2f;
     font-size: 35px;
     line-height: 24px;
-    font-family: "Raleway";
+    font-family: "Raleway", sans-serif;
     color: #ffffff;
     font-weight: 700;
     line-height: 0.686;
@@ -277,7 +320,7 @@ p {
 .pricing_column .payment {
     background-color: #2f2f2f;
     font-size: 14px;
-    font-family: "OpenSans";
+    font-family: "OpenSans", sans-serif;
     color: rgba(255, 255, 255, 0.502);
     line-height: 1.714;
     border-bottom: none;
@@ -289,7 +332,7 @@ p {
     font-size: 14px;
     line-height: 24px;
     color: #ffffff;
-    font-family: "Open Sans";
+    font-family: "Open Sans", sans-serif;
     font-weight: 700;
     background-color: #ff8c2c;
     padding: 0;
@@ -301,6 +344,57 @@ p {
     height: fit-content;
 }
 
+.testimonial_section {
+    width: 80%;
+    margin: 0 auto;
+    padding: 110px 0 95px 0;
+}
+
+.testimonial_block {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+}
+
+.testimonial_column {
+    width: 25%;
+}
+
+.testimonial_text {
+    background-color: #f5f5f5;
+    padding: 25px 15px;
+    border-radius: 4px;
+    position: relative;
+    margin-bottom: 25px;
+    font-style: italic;
+    color: #86878b;
+}
+
+.testimonial_text:after {
+    content: '';
+    position: absolute;
+    left: 25px;
+    bottom: -30px;
+    border: 10px solid transparent;
+    border-top: 20px solid #f5f5f5;
+}
+
+.customer_block {
+    display: flex;
+    align-items: center;
+}
+
+.customer_avatar {
+    margin-right: 15px;
+}
+
+.customer_name {
+    color: #333333;
+    font-size: 20px;
+    font-weight: bold;
+}
+
 .custom_section {
     padding: 21px 0;
     position: relative;
@@ -309,7 +403,7 @@ p {
 .custom_section p {
     font-size: 16px;
     color: #ffffff;
-    font-family: "Raleway";
+    font-family: "Raleway", sans-serif;
     font-weight: 300;
     position: relative;
 }
@@ -351,7 +445,7 @@ p {
     color: #ffffff;
     font-size: 15px;
     text-decoration: none;
-    font-family: "Open Sans";
+    font-family: "Open Sans", sans-serif;
     font-weight: 600;
     border: 2px solid #ffffff;
     display: inline-block;
@@ -374,7 +468,7 @@ footer {
 footer p {
     font-size: 12px;
     color: #ffffff;
-    font-family: "Open Sans";
+    font-family: "Open Sans", sans-serif;
     font-weight: 400;
     text-align: center;
 }
@@ -487,7 +581,8 @@ footer p {
     justify-content: center;
 }
 
-.button_block button {
+.button_block button,
+.button_block a {
     cursor: pointer;
     border: none;
     border-radius: 4px;
@@ -502,4 +597,101 @@ footer p {
     background-color: #fff;
     color: #ff9b51;
     border: 1px solid #ff9b51;
+}
+
+.tabs_section {
+    background-color: #f5f5f5;
+    padding: 145px 0 115px 0;
+}
+
+.tabs_block {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Open Sans', sans-serif;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.tabs_button_block {
+    width: 10%;
+}
+
+.tabs_content_block {
+    width: 40%;
+}
+
+.tabs_button_block a:not(:last-child) {
+    border-bottom: 1px solid #fff;
+}
+
+.tabs_button_block a.active {
+    background-color: #ff8b38;
+}
+
+.tab {
+    display: none;
+}
+
+.tabs_content_block .tab.active {
+    display: block;
+}
+
+.image_block {
+    width: 25%;
+}
+
+.image_block img {
+    width: 100%;
+}
+
+.tabs_button_block li {
+    list-style-type: none;
+    background-color: #333333;
+    margin: 2px 0;
+}
+
+.tabs_button_block a {
+    text-decoration: none;
+}
+
+.tabs_button_block {
+    display: flex;
+    flex-direction: column;
+}
+
+.tab_btn {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #333333;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+}
+
+.tabs_content_block h3 {
+    margin: 0;
+    font-size: 2rem;
+    margin-bottom: 55px;
+}
+
+.tabs_content_block p {
+    font-size: 1.4rem;
+    margin-bottom: 30px;
+    color: #86878b;
+}
+
+.tabs_content_block .button_block {
+    justify-content: flex-start;
+    padding-top: 10px;
+}
+
+.tabs_content_block>div {
+    display: none;
+}
+
+.tabs_content_block {
+    display: block;
 }
