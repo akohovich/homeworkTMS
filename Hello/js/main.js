@@ -64,7 +64,7 @@ let data = [{
     age: 24
 }];
 
-let inputLastName = prompt("Введите фамилию для поиска:");
+let inputLastName = prompt("Введите фамилию для поиска:").trim();
 let flag = false;
 for (let i = 0; i < data.length; i++) {
     if ((data[i].lastName).toUpperCase() === inputLastName.toUpperCase()) {
